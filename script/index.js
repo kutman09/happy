@@ -289,7 +289,7 @@ function animationTimeline() {
       startMicrophoneDetection();
     })
     .to(".section-cake", 0.5, { opacity: 0 }, "+=8")
-    .to(".section-nine", 0.7, { opacity: 1 })
+    .to(".section-nine", 0.7, { opacity: 1, pointerEvents: "auto" })
     .from(".section-nine p", 0.7, {
       opacity: 0,
       y: 20,
@@ -303,6 +303,7 @@ function animationTimeline() {
     candles.forEach((c) => c.classList.remove("out"));
     blowInstruction.style.display = "block";
     blownMessage.classList.remove("show");
+    document.querySelector(".section-nine").style.pointerEvents = "none";
 
     // Reset and play music again
     bgMusic.currentTime = 0;

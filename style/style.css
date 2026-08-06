@@ -605,6 +605,7 @@ body {
 /* Final Section */
 .section-nine {
   opacity: 0;
+  pointer-events: none;
 }
 
 .section-nine p {
@@ -787,7 +788,7 @@ body {
 
   .section-two {
     font-size: 1.25rem;
-    padding-top: 10vh;
+    padding-top: 28vh;
   }
 
   .section-three {
